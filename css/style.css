@@ -1,5 +1,7 @@
 body{
     background-color: white;
+    margin: auto;
+    font-style: normal;
 }
 #navbar {
     background: transparent;
@@ -121,4 +123,15 @@ body{
    margin: auto;
    padding: 30px;
    font-size: 20px;
+  }
+  #profile{
+    height: 400px;
+    width: 100%;
+  }
+  .profile-container{
+    margin-top: 100px;
+  }
+  #skills{
+    height: 400px;
+    width: 100%;
   }
