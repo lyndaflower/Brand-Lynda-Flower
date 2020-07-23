@@ -1,7 +1,7 @@
-body{
-    background-color: black;
+*{
+    background-color: white;
 }
-#navbar {
+/* #navbar {
     background: transparent;
     color: white;
     position: fixed;
@@ -135,4 +135,4 @@ body{
    margin: auto;
    padding: 30px;
    font-size: 20px;
-  }
+  } */
