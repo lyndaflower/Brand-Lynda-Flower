@@ -3,7 +3,7 @@ body{
 }
 #navbar {
     background: transparent;
-    color: white;
+    color: black;
     position: fixed;
     top: 0;
     height: 60px;
@@ -27,23 +27,9 @@ body{
         }
       }
   
-  
-  .logo {
-    float: left;
-    margin-left: 28px;
-    font-size: 1.5em;
-    height: 60px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  } @media(max-width: 768px) {
-      .logo {
-  /*       margin-left: 5px; */
-      }
-    }
-  
   #navbar ul {
     display: inline-block;
-    float: right;
+    float: left;
     list-style: none;
     /* margin-right: 14px; */
     margin-top: -2px;
@@ -66,7 +52,7 @@ body{
   }
   
   #navbar li a {
-    color: white;
+    color: black;
     font-weight : bold;
     display: block;
     font-size: 0.7em;
@@ -83,7 +69,7 @@ body{
   
   #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
+    color:  #bd000f;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
   }
