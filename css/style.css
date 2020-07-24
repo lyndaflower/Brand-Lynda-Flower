@@ -4,7 +4,7 @@ body{
     font-style: normal;
 }
 #navbar {
-    background: transparent;
+    background:    #004a7d;
     color: black;
     position: fixed;
     top: 0;
@@ -54,7 +54,7 @@ body{
   }
   
   #navbar li a {
-    color: black;
+    color: white;
     font-weight : bold;
     display: block;
     font-size: 0.7em;
@@ -71,7 +71,7 @@ body{
   
   #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color:  #bd000f;
+    color:  white;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
   }
@@ -83,7 +83,7 @@ body{
     width: 0%;
     height: 1px;
     bottom: -1px;
-    background: rgb(13, 26, 38);
+    background: rgb(220, 229, 238);
   }
   
   #navbar li a:before {
@@ -92,14 +92,14 @@ body{
   }
   
   #navbar li a:after {
-    background: black;
+    background: white;
     right: 0;
     text-decoration: none;
     /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
   
   #navbar li a:hover:before {
-    background: black;
+    background: white;
     width: 100%;
     transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
     text-decoration: none;
@@ -114,18 +114,8 @@ body{
   .navigation {
   padding-block-end : 100px;
   }
-  .stylee{
-  background-color : black;
-  opacity : 0.9;
-  color : white;
-  border-radius: 30px;
-   width: 600px;
-   margin: auto;
-   padding: 30px;
-   font-size: 20px;
-  }
-  #profile{
-    height: 400px;
+  #home{
+    height: 700px;
     width: 100%;
   }
   .profile-container{
@@ -137,7 +127,7 @@ body{
   }
 .hire-me{
   color: white;
-   background-color: #bd000f; 
+   background-color:  #004a7d; 
    margin-top: 150px;
    border: none;
    padding: 17px;
@@ -146,4 +136,20 @@ body{
    display: inline-block;
    font-size: 16px;
   border-radius: 20px;
+}
+.button{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:  #004a7d; 
+  margin-top: 100px;
+  border: none;
+  padding: 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ border-radius: 20px;
+}
+#project{
+  margin-top: 300px;
 }
