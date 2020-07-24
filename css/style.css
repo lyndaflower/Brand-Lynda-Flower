@@ -4,7 +4,7 @@ body{
     font-style: normal;
 }
 #navbar {
-    background:    #004a7d;
+    background:    #970000;
     color: black;
     position: fixed;
     top: 0;
@@ -127,7 +127,7 @@ body{
   }
 .hire-me{
   color: white;
-   background-color:  #004a7d; 
+   background-color:  #970000; 
    margin-top: 150px;
    border: none;
    padding: 17px;
@@ -140,8 +140,8 @@ body{
 .button{
   color: rgb(255, 255, 255);
   font-weight: bold;
-  background-color:  #004a7d; 
-  margin-top: 100px;
+  background-color:  #970000; 
+  margin-top: 40px;
   border: none;
   padding: 17px;
   text-align: center;
@@ -152,4 +152,8 @@ body{
 }
 #project{
   margin-top: 300px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
 }
