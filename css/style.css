@@ -135,3 +135,15 @@ body{
     height: auto;
     width: 100%;
   }
+.hire-me{
+  color: white;
+   background-color: #bd000f; 
+   margin-top: 150px;
+   border: none;
+   padding: 17px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+  border-radius: 20px;
+}
