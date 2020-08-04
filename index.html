@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootsrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>My brand</title>
 </head>
 <body>
+    <div class="container">
     <div id="home">
     <div class="  navigation">
         <nav id="navbar" class="">
@@ -20,29 +20,24 @@
                     <li><a href='#skills'>SKILLS</a></li>
                     <li><a href='#project'>PROJECT</a></li>
                     <li><a href='#archievement'>ARCHIEVEMENT</a> </li>
-                    <li><a href='#blog'>BLOG</a></li>
+                    <li><a href='/Pages/blog.html'>BLOG</a></li>
                     <li><a href='#contact'>CONTACT</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <img src="./UI/Assets/profile (4) (2).png" alt="profile-picture" style="max-width:100%;height:auto; float:right;" >
-    <div class="container">
-
-        <!-- Landing page -->
+    </div>
+                 <!-- profile-section -->
      
-                 <div class="profile-container">
-                        <h1 style="color:#970000;margin-top: 90px;font-family: 'Fjalla One', sans-serif;
-                        font-family: 'Oswald', sans-serif;font-size: 45px;"><strong>SOFTWARE DEVELOPER</strong></h1>
-                        <p style="font-family: 'Oswald', sans-serif;font-weight: bold;font-size: 27px;">I'm Lynda Flower UMURERWA</p>
-                        <button class="hire-me">Hire me</button>
-                    
-                 </div>
-             </div>
-            
-             <!-- Skills page -->
+                 <section class="profile-section">
+                        <img src="./UI/Assets/profile (4) (2).png" alt="profile-picture" id="profile-image" width="365" >
+                        <h1 id="head-intro">SOFTWARE DEVELOPER</h1>
+                        <p id="head-section">I'm Lynda Flower UMURERWA</p>
+                        <button class="hire-me">view works</button>
+                 </section>
+            <!-- Skills-section -->
 
-            <div id="skills" style="width: auto;height: 500px;">
+            <section id="skills" style="width: auto;height: 500px;">
                 <h1 style="text-align:center"><strong>SKILLS</strong></h1>
                 <div class="container">
                  <div class="row" style="margin-top: 30px;">
@@ -78,100 +73,108 @@
                    </div>
                 </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Project page -->
+                 <!-- Project section -->
 
-            <div id="project">
-                <h1 style="text-align: center;"><strong>PROJECT</strong></h1>
-                <div class="container">
-                <div class="row" style="margin-top: 80px;">
-                    <div class="col-md-6">
-                        <img src="./UI/Assets/paint.png" width="500" height="400">
-                        <p style="margin-top: 50px;"><strong>Painting genics</strong> is a web application with purpose of help painters to expose out their works
-                            .Technology used to develop painting genics is HTML,CSS,jQuery and bootsrap.
-                        </p>
-                        <button class="button"><a href="https://omoyi.github.io/paintings-genics/" style="color: white;">View more→</a></button>
+                 <section id="project">
+                    <h1 style="text-align: center;"><strong>PROJECT</strong></h1>
+                    <div class="container">
+                    <div class="row" style="margin-top: 80px;">
+                        <div class="col-md-6">
+                            <img src="./UI/Assets/paint.png" width="500" height="400">
+                            <p style="margin-top: 50px;"><strong>Painting genics</strong> is a web application with purpose of help painters to expose out their works
+                                .Technology used to develop painting genics is HTML,CSS,jQuery and bootsrap.
+                            </p>
+                            <button class="button"><a href="https://omoyi.github.io/paintings-genics/" style="color: white;">View more→</a></button>
+                        </div>
+                        <div class="col-md-6">
+                             <img src="./UI/Assets/quote.png" width="500" height="400">
+                             <p style="margin-top: 50px;"><strong>Quote creation</strong> is web application where you can create your own quote ,Technology used to develop Quote creation is angular,html and CSS.</p>
+                             <button class="button"><a href="https://lyndaflower.github.io/Quotes-application/" style="color: white;">View more→</a></button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                         <img src="./UI/Assets/quote.png" width="500" height="400">
-                         <p style="margin-top: 50px;"><strong>Quote creation</strong> is web application where you can create your own quote ,Technology used to develop Quote creation is angular,html and CSS.</p>
-                         <button class="button"><a href="https://lyndaflower.github.io/Quotes-application/" style="color: white;">View more→</a></button>
+                
+                    <div class="row2" style="margin-top:50px;">
+                         <div class="col-md-6">
+                             <img src="./UI/Assets/smart.png" width="400" height="600">
+                             <p style="margin-top: 50px;"><strong>Smart-code pro</strong> is android application with purpose of help junior and senior developers to expose out their work ,technology used to build smart-code pro is android studio,firebase </p>
+                             <button class="button"><a href="https://github.com/Omoyi/SCS_mobile/tree/Lynda" style="color: white;">View more→</a></button>
+                          </div>
+                          <div class="col-md-6">
+                              <img src="./UI/Assets/lancome.png" width="400" height="600">
+                              <p style="margin-top: 50px;"><strong>Lancome paris</strong> is android application that help any one who want to find out perfumes shop based on kind of perfumes he/she want ,technology used to build Lancome paris is android studio,firebase </p>
+                              <button class="button"><a href="https://github.com/lyndaflower/Lancome-paris4" style="color: white;">View more→</a></button>
+                          </div>
                     </div>
                 </div>
-            
-                <div class="row2" style="margin-top:50px;">
-                     <div class="col-md-6">
-                         <img src="./UI/Assets/smart.png" width="400" height="600">
-                         <p style="margin-top: 50px;"><strong>Smart-code pro</strong> is android application with purpose of help junior and senior developers to expose out their work ,technology used to build smart-code pro is android studio,firebase </p>
-                         <button class="button"><a href="https://github.com/Omoyi/SCS_mobile/tree/Lynda" style="color: white;">View more→</a></button>
-                      </div>
-                      <div class="col-md-6">
-                          <img src="./UI/Assets/lancome.png" width="400" height="600">
-                          <p style="margin-top: 50px;"><strong>Lancome paris</strong> is android application that help any one who want to find out perfumes shop based on kind of perfumes he/she want ,technology used to build Lancome paris is android studio,firebase </p>
-                          <button class="button"><a href="https://github.com/lyndaflower/Lancome-paris4" style="color: white;">View more→</a></button>
-                      </div>
-                </div>
-            </div>
-            </div>
-
-    <!-- contact page -->
-
-
+                 </section>
+      <!-- contact-section -->
            
-           <div id="contact">
-               <h1 style="margin-top: 100px; text-align: center;"><strong>CONTACT US</strong></h1>
-            <div class="container">
-            <div class="row" style="margin-top: 80px;">
-            <div class="col-md-6">
-             <div class="row">
-                 <div class="col-md-2">
-                <img src="./UI/Assets/homw.png" alt="" width="50" height="50" >
-            </div>
-                <p><strong>Kigali,Rwanda</strong></p>
-                <p style="font-size: 15px;">Gikondo city</p>
-            </div>
-            <div class="col-md-2">
-                <img src="./UI/Assets/calll.png" alt="" width="50" height="50" >
-            </div>
-                <p><strong>+250781213705</strong></p>
-                <p>call anytime!</p>
-            
-             <div class="col-md-2">
-                <img src="./UI/Assets/mail.jpg" alt="" width="40" height="50">
-            </div>
-                <p><strong>umurerwalynda@gmail.com</strong></p>
-                <p>send us your query anytime!</p>
-            </div>
-            <div class="col-md-6">
-                <form action="contact-form">
-                    <label for="fname">Full name</label>
-                    <input type="text" id="fname" name="fullname" placeholder="">
-                
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your address-email..">
+      <section id="contact">
+        <h1 style="margin-top: 100px; text-align: center;"><strong>CONTACT US</strong></h1>
+     <div class="container">
+     <div class="row" style="margin-top: 80px;">
+     <div class="col-md-6">
+      <div class="row">
+          <div class="col-md-2">
+         <img src="./UI/Assets/homw.png" alt="" width="50" height="50" >
+     </div>
+         <p><strong>Kigali,Rwanda</strong></p>
+         <p style="font-size: 15px;">Gikondo city</p>
+     </div>
+     <div class="col-md-2">
+         <img src="./UI/Assets/calll.png" alt="" width="50" height="50" >
+     </div>
+         <p><strong>+250781213705</strong></p>
+         <p>call anytime!</p>
+     
+      <div class="col-md-2">
+         <img src="./UI/Assets/mail.jpg" alt="" width="40" height="50">
+     </div>
+         <p><strong>umurerwalynda@gmail.com</strong></p>
+         <p>send us your query anytime!</p>
+     </div>
+     <div class="col-md-6">
+         <form action="contact-form">
+             <label for="fname">Full name</label>
+             <input type="text" id="fname" name="fullname" placeholder="Enter your fullname...">
+         
+             <label for="email">Email</label>
+             <input type="text" id="email" name="email" placeholder="Enter your address-email..">
 
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Type your subject...">
-        
-                    <label for="comment">Comment</label>
-                    <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-                
-                    <input type="sendt" value="send">
-                </form>
-            </div>
-           </div>
-             </div>
-           </div>
+             <label for="subject">Subject</label>
+             <input type="text" id="subject" name="subject" placeholder="Type your subject...">
+ 
+             <label for="comment">Comment</label>
+             <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+         
+             <input type="send" value="send">
+         </form>
+     </div>
+    </div>
+    </div>
+      </section>
 
-
-<!-- footer page -->
+      <!-- footer page -->
 
      <footer>
-         <div>
-             <h1>ABOUT ME</h1>
-             <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-         </div>
-     </footer>
+         
+        <div id="footer">
+           <div class="container">
+            <div class="about">
+            <h1><strong>ABOUT ME</strong></h1>
+            <p>Do you want to be even more successful? Learn to love learning and growth.<br>The more effort you put into improving your skills,</p>
+         <div style="margin-top: 200px;">
+           <form class="searchform cf">
+               <input type="text" placeholder="Enter your email">
+               <button type="submit">Subscribe</button>
+             </form> 
+         </div>             
+       </div>
+       </div>
+       </div>
+    </footer>
+    </div>
 </body>
 </html>
