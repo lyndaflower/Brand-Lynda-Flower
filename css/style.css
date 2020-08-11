@@ -11,7 +11,7 @@ body{
   padding-block-end : 10px;
 } */
 .navbar {
-  display: flex;
+    display: flex;
     background:#970000;
     color: black;
     position: fixed;
@@ -60,7 +60,7 @@ body{
   }
   
   .navbar li a:hover {
-    border-bottom: 1px solid rgb(28, 121, 184);
+    border-bottom: 1px solid white;
     color:  white;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;

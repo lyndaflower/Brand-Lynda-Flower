@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/blogstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="JS/jQuery.js">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <nav class="navbar show">
+                    <ul class="nav-wrapper">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href='#service'>SERVICE</a></li>
+                        <li><a href='#project'>PROJECT</a></li>
+                        <li><a href='#archievement'>ARCHIEVEMENT</a> </li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href='#contact'>CONTACT</a></li>
+                      
+                    </ul>
+            </nav>
+        </div> 
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-3x"></i>
+        </div>
+<!-- blog cards-section -->
+<section class="blog-cards-section">
+    <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Aug. 24, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Learning to Code</h1>
+          <h2>Opening a door to the future</h2>
+          <p> coding is not hard to learn. If you take the time and have a little patience, you can really learn just about anything–coding is no exception. Learning to code takes time and persistence, but if you have that, then coding is not hard to learn.</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Mastering the Language</h1>
+          <h2>Java is not the same as JavaScript</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+</section>
+    </div>
+    <script>
+        document.querySelector('.navbar').addEventListener
+        ('click', () => document.querySelector('.navbar')
+        .classList.toggle('show'));
+    </script>
+</body>
+</html>
