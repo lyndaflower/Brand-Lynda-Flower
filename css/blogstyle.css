@@ -1,5 +1,5 @@
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -13,21 +13,20 @@ ul {
     height: 60px;
     padding: 20 0px;
     font-size: 13px;
-    /* background:#970000; */
-    position: fixed;
+    background:#970000;
+    /* position: fixed; */
     top: 0;
     height: 60px;
-    line-height: 60px;
-    width: 100vw;
-    z-index: 10;
+    width: 100%;
 }
 .navbar ul {
     display: flex;
 }
 .navbar ul.nav-wrapper{
     flex: 1;
-    margin-left: 20px;
+    margin-left: 250px;
 }
+
 .navbar ul.nav-wrapper li {
     padding: 0 10px;
 }
@@ -49,7 +48,7 @@ ul {
 
   /* blog-cards */
 .blog-cards-section {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
 }
  .blog-card {
