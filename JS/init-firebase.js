@@ -55,11 +55,11 @@ const addBlogBtnClicked = () => {
 const uploadBtn = document.querySelector("#upload");
 // uploadBtn.addEventListener("click", upload);
 
-const callBack = () => {
+const loadAllArticles = () => {
   const blogsRef = firebase.database().ref("blogs");
   var blogSection = document.querySelector("#blog-section");
   blogsRef.on("child_added", (snap) => {
-    console.log(snap.val().image);
+    console.log(snap.val().image+"snapValue");
 
     let blogCard = document.createElement("div");
     let blogImage = document.createElement("div");
@@ -72,14 +72,16 @@ const callBack = () => {
     let blogBody = document.createElement("p");
     blogBody.innerHTML = snap.val().body;
 
-    blogImage.append(image)
+    blogImage.append(image);
     blogDetails.append(blogTitle);
     blogDetails.append(blogDesc);
     blogDetails.append(blogBody);
 
-    
+
     blogCard.append(blogDetails);
     blogCard.append(blogImage);
     blogSection.append(blogCard);
+
+    console.log();
   });
 };
