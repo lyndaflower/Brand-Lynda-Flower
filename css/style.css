@@ -13,7 +13,7 @@ body{
 .navbar{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   height: 60px;
   padding: 20 0px;
   font-size: 13px;
@@ -102,23 +102,20 @@ ul {
   background: transparent;
   width: 100%;
   text-decoration: none;
-
 }
-  /* responsive menu */
-  .menu-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 30px;  
-    z-index: 2;
-    display: none;
-  }
-  .navigation {
-  padding-block-end : 100px;
-  }
+
+/* navbar menu */
+.menu{
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  z-index: 2;
+  display: none;
+}
   .profile-section{
     width: 100%;
     height: 500px;
+    margin-top: 100px;
   }
   .profile-section img{
     width: 375px; 
@@ -465,9 +462,38 @@ input[type=submit]:hover {
 }
  
 @media screen and (max-width: 768px){
-  .nav-wrapper {
-    width: 100%;
+  .container {
+    width: 90%;
   }
+.menu {
+  display: block;
+  color: white;
+}
+.menu:hover{
+  opacity: 0.5;
+}
+.navbar ul.nav-wrapper{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -10pc;
+  background: #970000;
+  width: 50%;
+  border-right: #ccc 1px solid;
+  opacity: 0.9;
+}
+.navbar ul.nav-wrapper li{
+  padding: 45px;
+  border-bottom: #ccc 1px solid;
+  font-size: 20px;
+}
+.navbar ul.nav-wrapper li {
+  border-bottom: 0;
+}
+.navbar ul.nav-wrapper .show{
+  transform: translateX(-30px);
+}
+  
   .project-container {
     grid-template-columns: repeat(2,1fr);
   }
@@ -487,32 +513,6 @@ input[type=submit]:hover {
   .menu-btn:hover{
     opacity: 0.5;
   }
-  .navbar ul.nav-wrapper {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    background: white;
-    width: 50%;
-    height: 100%;
-    transform: translateX(-20px);
-    border-right: #970000 1px solid;
-    opacity: 0.9;
-    padding: 30px; 
-  }
-  .navbar ul.nav-wrapper .show{
-    transform: translateX(-20px);
-  }
-  .navbar ul.nav-wrapper li {
-    padding: 10px;
-    border-bottom: #970000 solid 1px;
-    font-size: 15px;
-  }
-  .navbar ul.nav-wrapper li:last-child{
-    border-bottom: 0;
-  }
-
 }
 .btn-login{
   color:#970000;

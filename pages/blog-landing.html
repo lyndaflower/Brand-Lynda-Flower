@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/blogstyle.css">
+  <link rel="stylesheet" href="../CSS/blog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="JS/jQuery.js">
+  <!-- <link rel="stylesheet" href="JS/jQuery.js"> -->
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <title>Blog</title>
 </head>
@@ -18,16 +18,16 @@
     <div class="navigation">
       <nav class="navbar show">
         <ul class="nav-wrapper">
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="../index.html">HOME</a></li>
           <li><a href='#service'>SERVICE</a></li>
           <li><a href='#project'>PROJECT</a></li>
-          <li><a href='#archievement'>ARCHIEVEMENT</a> </li>
-          <li><a href='blog.html'>BLOG</a></li>
+          <li><a href='./create-article.html'>ARCHIEVEMENT</a> </li>
+          <li><a href='./blog-landing.html'>BLOG</a></li>
           <li><a href='#contact'>CONTACT</a></li>
         </ul>
-        <div>
+        <!-- <div>
           <a href="" class="btn-login" id="login-btn">Login</a>
-        </div>
+        </div> -->
       </nav>
     </div>
     <div class="menu-btn">
@@ -36,19 +36,12 @@
     <!-- blog cards-section -->
 
     <section class="blog-cards-section" id="blog-section">
-      <div class="blog-card">
-        <!-- <div class="meta">
-          <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-        </div>
+       
         <div class="description">
-          <h1 id="title">Learning to Code</h1>
-          <h2 id="description">Opening a door to the future</h2>
-          <p id="body"> coding is not hard to learn. If you take the time and have a little patience, you can really learn just about anything–coding is no exception. Learning to code takes time and persistence, but if you have that, then coding is not hard to learn.</p>
           <p class="read-more">
             <a href="article.html">Read More<i class="fas fa-arrow-right"></i></a>
           </p>
-        </div> -->
-      </div>
+        </div>
     </section>
   </div>
   <script>
@@ -56,16 +49,7 @@
       ('click', () => document.querySelector('.navbar')
         .classList.toggle('show'));
   </script>
-  <script src="JS/init-firebase.js"></script>
-  <script src="/__/firebase/7.17.2/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-
+  <script src="../JS/blog.js"></script>
 </body>
 
 </html>

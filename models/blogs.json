@@ -4,7 +4,8 @@
         "description" :"description",
         "body": "body",
         "author":"lynda",
-        "image":" "
+        "image":" ",
+        "read":"read"
     }]
 
 }
