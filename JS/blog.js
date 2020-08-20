@@ -12,34 +12,49 @@ const firebaseConfig = {
   
   const dbRef = firebase.database().ref();
   const blogsRef = dbRef.child("blogs");
+  
+ 
 
 const loadAllArticles = () => {
     const blogsRef = firebase.database().ref("blogs");
     var blogSection = document.querySelector("#blog-section");
     blogsRef.on("child_added", (snap) => {
       console.log(snap.key);
-  
-      let blogCard = document.createElement("div");
-      let blogImage = document.createElement("div");
-      let image = document.createElement('img');
-      let blogDetails = document.createElement("div");
-      let blogTitle = document.createElement("h1");
-      let blogReadMore = document.createElement("p");
 
-      blogTitle.innerHTML = snap.val().title;
+      const setCurrentArticle = (id) => {
+        localStorage.setItem("current-article-id", id);
+      };
+  
+      // blog-card
+      let blogCard = document.createElement("div");
+      let blogDetails = document.createElement("div");
       let blogDesc = document.createElement("h2");
       blogDesc.innerHTML = snap.val().description;
       let blogBody = document.createElement("p");
       blogBody.innerHTML = snap.val().body;
-      blogReadMore.innerHTML = `<a href="single-blog.html">Read More<i class="fas fa-arrow-right"></i></a>`
-    
+     
+       //  blog-cover-image
+      let blogImage = document.createElement("div");
+      let image = document.createElement('img');
       image.src = snap.val().image;
+       
+      // blog title
+      let blogTitle = document.createElement("h1");
+      blogTitle.innerHTML = snap.val().title;
+
+      // blog-readmore
+      let blogReadMore = document.createElement("a");
+      blogReadMore.setAttribute("href", "./read-more.html");
+      const readMore = document.createTextNode("read more");
+      blogReadMore.appendChild(readMore);
+      blogReadMore.addEventListener("click", setCurrentArticle(snap.id));
+      // blogReadMore.innerHTML = `<a href="single-blog.html">Read More<i class="fas fa-arrow-right"></i></a>`
 
       image.setAttribute('class', 'photo');
       blogCard.setAttribute('class', 'blog-card');
       blogImage.setAttribute('class','meta');
       blogDetails.setAttribute('class','description');
-      blogReadMore.setAttribute('class','read-more');
+      blogReadMore.setAttribute('class','read-more a');
 
       blogImage.append(image);
       blogDetails.append(blogTitle);
