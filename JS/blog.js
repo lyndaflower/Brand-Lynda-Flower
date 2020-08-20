@@ -44,11 +44,9 @@ const loadAllArticles = () => {
 
       // blog-readmore
       let blogReadMore = document.createElement("a");
-      blogReadMore.setAttribute("href", "./read-more.html");
+      blogReadMore.setAttribute("href", "./article-list.html");
       const readMore = document.createTextNode("read more");
       blogReadMore.appendChild(readMore);
-      blogReadMore.addEventListener("click", setCurrentArticle(snap.id));
-      // blogReadMore.innerHTML = `<a href="single-blog.html">Read More<i class="fas fa-arrow-right"></i></a>`
 
       image.setAttribute('class', 'photo');
       blogCard.setAttribute('class', 'blog-card');
