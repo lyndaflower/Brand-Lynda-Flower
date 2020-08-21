@@ -13,26 +13,25 @@ const firebaseConfig = {
   const dbRef = firebase.database().ref();
   const blogsRef = dbRef.child("blogs");
   
- 
 
 const loadAllArticles = () => {
     const blogsRef = firebase.database().ref("blogs");
     var blogSection = document.querySelector("#blog-section");
     blogsRef.on("child_added", (snap) => {
-      console.log(snap.key);
 
-      const setCurrentArticle = (id) => {
-        localStorage.setItem("current-article-id", id);
-      };
-  
+      // let currentBlog = snap.key;
+      // localStorage.setItem("dataKey", snap.key);
+      // console.log(currentBlog);
+
+
       // blog-card
       let blogCard = document.createElement("div");
       let blogDetails = document.createElement("div");
       let blogDesc = document.createElement("h2");
       blogDesc.innerHTML = snap.val().description;
       let blogBody = document.createElement("p");
-      blogBody.innerHTML = snap.val().body;
-     
+      blogBody.innerHTML = snap.val().body.slice(0,150);
+
        //  blog-cover-image
       let blogImage = document.createElement("div");
       let image = document.createElement('img');
@@ -47,6 +46,9 @@ const loadAllArticles = () => {
       blogReadMore.setAttribute("href", "./article-list.html");
       const readMore = document.createTextNode("read more");
       blogReadMore.appendChild(readMore);
+      blogReadMore.addEventListener('click', ()=>{
+        localStorage.setItem('dataKey', snap.key);
+      })
 
       image.setAttribute('class', 'photo');
       blogCard.setAttribute('class', 'blog-card');

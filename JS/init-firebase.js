@@ -23,7 +23,7 @@ const firebaseConfig = {
     var storageRef = firebase.storage().ref(files[0].name);
     let uploadTask = storageRef.put(files[0]);
     console.log("upload image", uploadTask);
-    //   uploadTask.then((err, res) =>{
+  
     uploadTask.then((snap) => {
       console.log(snap.metadata.downloadURLs);
       imageUrls = snap.metadata.downloadURLs
@@ -49,9 +49,9 @@ const firebaseConfig = {
       console.log("data has been inserted");
     });
   };
-//   addBlogBtnUI.addEventListener("click", addBlogBtnClicked);
+  addBlogBtnUI.addEventListener("click", addBlogBtnClicked);
   
   const uploadBtn = document.querySelector("#upload");
-//   uploadBtn.addEventListener("click", upload);
+  uploadBtn.addEventListener("click", upload);
   
   

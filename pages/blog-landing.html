@@ -15,21 +15,19 @@
 
 <body onload="loadAllArticles()">
   <div class="container">
-    <div class="navigation">
-      <nav class="navbar show">
+      <nav class="navbar">
         <ul class="nav-wrapper">
           <li><a href="../index.html">HOME</a></li>
-          <li><a href='#service'>SERVICE</a></li>
-          <li><a href='#project'>PROJECT</a></li>
+          <li><a href='../index.html#service'>SERVICE</a></li>
+          <li><a href='../index.html#project'>PROJECT</a></li>
           <li><a href='./create-article.html'>ARCHIEVEMENT</a> </li>
           <li><a href='./blog-landing.html'>BLOG</a></li>
           <li><a href='#contact'>CONTACT</a></li>
         </ul>
-        <!-- <div>
-          <a href="" class="btn-login" id="login-btn">Login</a>
-        </div> -->
+        <div class="menu">
+          <i class="fas fa-bars fa-3x"></i>
+        </div>
       </nav>
-    </div>
     <div class="menu-btn">
       <i class="fas fa-bars fa-3x"></i>
     </div>
@@ -45,9 +43,9 @@
     </section>
   </div>
   <script>
-    document.querySelector('.navbar').addEventListener
-      ('click', () => document.querySelector('.navbar')
-        .classList.toggle('show'));
+    document.querySelector('.menu').addEventListener
+      ('click', () => document.querySelector('.nav-wrapper')
+        .classList.toggle('hide'));
   </script>
   <script src="../JS/blog.js"></script>
 </body>
