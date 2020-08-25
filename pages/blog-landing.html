@@ -9,18 +9,19 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
   <!-- <link rel="stylesheet" href="JS/jQuery.js"> -->
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
   <title>Blog</title>
 </head>
 
-<body onload="loadAllArticles()">
+<body>
   <div class="container">
       <nav class="navbar">
         <ul class="nav-wrapper">
           <li><a href="../index.html">HOME</a></li>
           <li><a href='../index.html#service'>SERVICE</a></li>
           <li><a href='../index.html#project'>PROJECT</a></li>
-          <li><a href='./create-article.html'>ARCHIEVEMENT</a> </li>
+          <li><a href='./create-article.html'>Article</a> </li>
           <li><a href='./blog-landing.html'>BLOG</a></li>
           <li><a href='#contact'>CONTACT</a></li>
         </ul>
@@ -34,7 +35,11 @@
     <!-- blog cards-section -->
 
     <section class="blog-cards-section" id="blog-section">
-       
+       <div class="meta">
+         <div class="photo">
+           <img src="" >
+         </div>
+       </div>
         <div class="description">
           <p class="read-more">
             <a href="article.html">Read More<i class="fas fa-arrow-right"></i></a>

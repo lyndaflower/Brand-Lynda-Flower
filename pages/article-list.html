@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/article-list.css">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <title>Personal website</title>
 </head>
 
@@ -12,10 +13,10 @@
     <div class="container">
         <nav class="navbar show">
             <ul class="nav-wrapper">
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href='../index.html#service'>SERVICE</a></li>
                 <li><a href='../index.html#project'>PROJECT</a></li>
-                <li><a href='./create-article.html'>ARCHIEVEMENT</a> </li>
+                <li><a href='./create-article.html'>Article</a> </li>
                 <li><a href='./blog-landing.html'>BLOG</a></li>
                 <li><a href='#contact'>CONTACT</a></li>
             </ul>
@@ -24,10 +25,12 @@
             </div>
         </nav>
 
-        <section></section>
+        <section class="displayed-article" id="display">
+
+        </section>
 
         <!-- comment-section -->
-        <!-- <section class="comment-section-form">
+        <section class="comment-section-form">
             <div class="title-section">
                 <h1><strong>Leave comment</strong></h1>
             </div>
@@ -43,14 +46,15 @@
 
                 <input type="submit" value="send">
             </div>
-        </section> -->
+        </section>
     </div>
     <script>
-        document.querySelector('.navbar').addEventListener
-          ('click', () => document.querySelector('.navbar')
-            .classList.toggle('show'));
+        document.querySelector('.menu').addEventListener
+          ('click', () => document.querySelector('.nav-wrapper')
+            .classList.toggle('hide'));
       </script>
-
+      <!-- <script src="../JS/blog.js"></script> -->
+      <script src="../JS/article.js"></script>
 </body>
 
 </html>

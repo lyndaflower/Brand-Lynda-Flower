@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 20 0px;
     font-size: 13px;
     background:#970000;
@@ -21,7 +21,7 @@
     color: white;
     font-weight : bold;
     display: block;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     height: 20px;
     letter-spacing: 1px;
     margin: 0 20px;
@@ -103,7 +103,6 @@ ul {
 
   /* blog-cards */
 .blog-cards-section {
-    margin-top: 100px;
     width: 100%;
     
 }
@@ -309,7 +308,7 @@ input[type=text], select, textarea {
     color:#970000;
     background-color:white; 
     /* margin-top: 150px; */
-    /* margin-left: 250px; */
+    margin-left: 250px;
     border: none;
     padding: 10px 20px;
     text-align: center;
