@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/blog.css">
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
     <title>My brand project</title>
 </head>
 
@@ -40,9 +41,9 @@
                 <textarea id="body" name="body" class="article-input" placeholder="Write something..."
                     style="height:200px"></textarea><br>
 
-                <input type="file" id="image" onchange="chooseFile()"><br><br><br>
+                <input type="file" id="image"><br><br><br>
                 <!-- <button id="upload">Upload</button><br><br> -->
-                <input type="submit" id="add-blog-btn" value="send" onclick="addBlogBtnClicked()">
+                <input type="submit" id="add-blog-btn" value="send">
             </div>
         </section>
     </div>
@@ -51,7 +52,8 @@
             ('click', () => document.querySelector('.nav-wrapper')
                 .classList.toggle('hide'));
     </script>
-    <script src="../JS/init-firebase.js"></script>
+    <script src="../JS/init-firebase.js" type="module"></script>
+    <script src="../config.js" type="module"></script>
 </body>
 
 </html>
