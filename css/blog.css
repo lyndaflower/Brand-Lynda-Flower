@@ -189,7 +189,7 @@ ul {
 .blog-card p {
     position: relative;
     margin: 1rem 0 0;
-    max-height: 100px;
+    /* max-height: 100px; */
     overflow: hidden;
 }
 .blog-card p:first-of-type {
@@ -204,8 +204,9 @@ ul {
     top: -0.75rem;
     border-radius: 3px;
 }
-.blog-card:hover .details {
-    left: 0%;
+.blog-card p.article-preview {
+  margin: 10px auto;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
 
