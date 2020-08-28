@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/article-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
@@ -13,53 +16,65 @@
 
 <body>
     <div class="container">
-        <nav class="navbar show">
+        <nav class="navbar">
             <ul class="nav-wrapper">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href='../index.html#service'>SERVICE</a></li>
-                <li><a href='../index.html#project'>PROJECT</a></li>
-                <li><a href='./create-article.html'>Article</a> </li>
-                <li><a href='./blog-landing.html'>BLOG</a></li>
-                <li><a href='#contact'>CONTACT</a></li>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href='../index.html#service'>SERVICE</a></li>
+              <li><a href='../index.html#project'>PROJECT</a></li>
+              <li><a href='./create-article.html'>Article</a> </li>
+              <li><a href='./blog-landing.html'>BLOG</a></li>
+              <li><a href='#contact'>CONTACT</a></li>
             </ul>
             <div class="menu">
-                <i class="fas fa-bars fa-3x"></i>
+              <i class="fas fa-bars fa-3x"></i>
             </div>
-        </nav>
+          </nav>
 
-        <section class="article">
-
-        </section>
+        <section class="article"></section>
+        
         <section>
-            <a class="btnfos btnfos-3">Hover</a> 
-            <a class="btnfos btnfos-3">Hover</a> 
+            <a class="btnfos btnfos-3">Hover</a>
+            <a class="btnfos btnfos-3">Hover</a>
         </section>
         <!-- comment-section -->
         <section class="comment-section-form">
-            <div class="title-section">
-                <h1><strong>Leave comment</strong></h1>
-            </div>
-            <div class="comment-form">
-                <label for="fname">name</label>
-                <input type="text" id="fname" name="fullname" placeholder="Enter your fullname...">
+            <h2>Leave a comment</h2>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter your address-email..">
+            <form class="comments__form">
+                <div class="comments__form-info">
 
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+                    <div class="comments__form-field">
+                        <input placeholder="Name" type="text" class="comments__form-input">
+                        <label class="comments__form-label" for="comments__form-label-name">
+                            <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
 
-                <input type="submit" value="send">
-            </div>
-        </section>
+                    <div class="comments__form-field">
+                        <input name="author" placeholder="E-mail" type="text" class="comments__form-input" >
+                        <label class="comments__form-label" for="comments__form-label-mail">
+                            <span class="comments__form-label-text">E-mail</span>
+                        </label>
+                    </div>
+
+                    <div class="comments__form-field">
+                        <textarea placeholder="Express your thoughts" type="text"
+                            class="comments__form-input comments__form-textarea"></textarea>
+                        <label class="comments__form-label" for="comments__form-label-text">
+                            <span class="comments__form-label-text">Express your thoughts</span>
+                        </label>
+                    </div>
+                </div>
+                <input name="submit" type="submit" class="comments__form-submit" value="Post Comment">
+            </form>
     </div>
     <script>
         document.querySelector('.menu').addEventListener
           ('click', () => document.querySelector('.nav-wrapper')
             .classList.toggle('hide'));
-      </script>
-      <script src="../JS/config.js" type="module"></script>
-      <script src="../JS/article.js" type="module"></script>
+      </script
+    <script src="../JS/config.js" type="module"></script>
+    <script src="../JS/article.js" type="module"></script>
 </body>
 
 </html>

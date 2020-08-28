@@ -1,15 +1,14 @@
 import { db } from "./config.js";
-// import {storage} from "./config";
+import {storage} from "./config";
 
-
+const fetchArticle = (id) => {
+  localStorage.setItem("article-id", id);
+  window.location.assign("article-list.html");
+};
 
 const loadAllArticles = (docs) => {
   var blogSection = document.querySelector("#blog-section");
 
-  const singleArticle = (id) => {
-    localStorage.setItem("article-id", docs.id);
-    window.location.assign("article-list.html");
-  };
   // blog-card
   let blogCard = document.createElement("div");
   let blogDetails = document.createElement("div");
@@ -32,7 +31,7 @@ const loadAllArticles = (docs) => {
   const readMore = document.createTextNode("read more");
   blogReadMore.appendChild(readMore);
   blogReadMore.addEventListener('click', () =>
-    singleArticle(docs.id));
+  fetchArticle(docs.id));
 
   image.setAttribute("class", "photo");
   blogCard.setAttribute("class", "blog-card");

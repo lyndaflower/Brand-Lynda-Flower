@@ -11,7 +11,6 @@ const addBlogBtnClicked =()=>{
   let description = document.getElementById("description").value;
   let body = document.getElementById("body").value;
 
-  var imageUrls 
      // to get value
      const { files } = document.querySelector('input[type="file"]');
      var storageRef = storage.ref(files[0].name);
