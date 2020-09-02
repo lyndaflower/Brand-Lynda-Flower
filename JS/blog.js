@@ -1,5 +1,5 @@
 import { db } from "./config.js";
-import {storage} from "./config";
+// import {storage} from "./config";
 
 const fetchArticle = (id) => {
   localStorage.setItem("article-id", id);

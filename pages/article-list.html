@@ -32,49 +32,30 @@
 
         <section class="article"></section>
         
-        <section>
-            <a class="btnfos btnfos-3">Hover</a>
-            <a class="btnfos btnfos-3">Hover</a>
-        </section>
         <!-- comment-section -->
         <section class="comment-section-form">
             <h2>Leave a comment</h2>
+<!-- 
+            <div class="comments__form" id="comment-form">
+                <div class="comments__form-info"> -->
 
-            <form class="comments__form">
-                <div class="comments__form-info">
-
-                    <div class="comments__form-field">
-                        <input placeholder="Name" type="text" class="comments__form-input">
-                        <label class="comments__form-label" for="comments__form-label-name">
-                            <span class="comments__form-label-text">Name</span>
-                        </label>
-                    </div>
-
-                    <div class="comments__form-field">
-                        <input name="author" placeholder="E-mail" type="text" class="comments__form-input" >
-                        <label class="comments__form-label" for="comments__form-label-mail">
-                            <span class="comments__form-label-text">E-mail</span>
-                        </label>
-                    </div>
-
-                    <div class="comments__form-field">
-                        <textarea placeholder="Express your thoughts" type="text"
-                            class="comments__form-input comments__form-textarea"></textarea>
-                        <label class="comments__form-label" for="comments__form-label-text">
+                    <!-- <div class="comments__form-field"> -->
+                        <textarea placeholder="Express your thoughts" id="comment-field" 
+                            class="comments__form-textarea"></textarea>
                             <span class="comments__form-label-text">Express your thoughts</span>
-                        </label>
-                    </div>
-                </div>
-                <input name="submit" type="submit" class="comments__form-submit" value="Post Comment">
-            </form>
+                    <!-- </div> -->
+                <!-- </div> -->
+              <button id="submit">Post Comment</button>
+            <!-- </div> -->
     </div>
     <script>
         document.querySelector('.menu').addEventListener
           ('click', () => document.querySelector('.nav-wrapper')
             .classList.toggle('hide'));
-      </script
+    </script>
     <script src="../JS/config.js" type="module"></script>
     <script src="../JS/article.js" type="module"></script>
+    <script src="../JS/comment.js" type="module"></script>
 </body>
 
 </html>
