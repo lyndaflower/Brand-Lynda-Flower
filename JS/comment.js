@@ -31,7 +31,7 @@ const getComments = () =>{
             commentDiv.appendChild(nameElement);
             commentDiv.appendChild(commentElement);
             commentDiv.appendChild(timestamp);
-            commentSection.appendChild(commentDiv)
+            commentSection.appendChild(commentDiv);
           });
       } else {
         console.log("No such document!");
@@ -52,6 +52,13 @@ const postComment = () => {
     .doc(localStorage.getItem("article-id"));
   blogRef.update({
     comments: firebase.firestore.FieldValue.arrayUnion({ name: 'Doreen Shami', comment: textData, image: '', time: `${hours}:${minutes}`})
+
   });
+  setTimeout(function() {
+    location.reload();
+  }, 3000);
 };
+
+
+
 button.addEventListener("click", postComment);

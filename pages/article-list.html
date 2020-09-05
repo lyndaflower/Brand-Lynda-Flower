@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/article-list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-    crossorigin="anonymous" />
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
@@ -18,17 +18,17 @@
     <div class="container">
         <nav class="navbar">
             <ul class="nav-wrapper">
-              <li><a href="../index.html">HOME</a></li>
-              <li><a href='../index.html#service'>SERVICE</a></li>
-              <li><a href='../index.html#project'>PROJECT</a></li>
-              <li><a href='./create-article.html'>Article</a> </li>
-              <li><a href='./blog-landing.html'>BLOG</a></li>
-              <li><a href='#contact'>CONTACT</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href='../index.html#service'>SERVICE</a></li>
+                <li><a href='../index.html#project'>PROJECT</a></li>
+                <li><a href='./create-article.html'>Article</a> </li>
+                <li><a href='./blog-landing.html'>BLOG</a></li>
+                <li><a href='#contact'>CONTACT</a></li>
             </ul>
             <div class="menu">
-              <i class="fas fa-bars fa-3x"></i>
+                <i class="fas fa-bars fa-3x"></i>
             </div>
-          </nav>
+        </nav>
 
         <section class="article"></section>
         <section id="comment-section"></section>
@@ -40,18 +40,22 @@
                 <div class="comments__form-info">
 
                     <div class="comments__form-field">
-                        <textarea placeholder="Express your thoughts" id="comment-field" 
+                        <textarea placeholder="Express your thoughts" id="comment-field"
                             class="comments__form-textarea"></textarea>
-                            <span class="comments__form-label-text">Express your thoughts</span>
+                        <span class="comments__form-label-text">Express your thoughts</span><br><br>
                     </div>
                 </div>
-              <button id="btn-post">Post Comment</button>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <button id="btn-post">Post Comment</button>
             </div>
     </div>
     <script>
         document.querySelector('.menu').addEventListener
-          ('click', () => document.querySelector('.nav-wrapper')
-            .classList.toggle('hide'));
+            ('click', () => document.querySelector('.nav-wrapper')
+                .classList.toggle('hide'));
     </script>
     <script src="../JS/config.js" type="module"></script>
     <script src="../JS/article.js" type="module"></script>
