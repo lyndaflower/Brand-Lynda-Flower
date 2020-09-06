@@ -31,35 +31,32 @@
         </nav>
 
         <section class="article"></section>
-        <section id="comment-section"></section>
+        <section class="comment-display" id="comment-section">
+            <h2>Comments</h2>
+        </section>
         <!-- comment-section -->
         <section class="comment-section-form">
             <h2>Leave a comment</h2>
-
-            <div class="comments__form" id="comment-form">
-                <div class="comments__form-info">
-
+            <div class="comments" id="comment-form">
+                <div class="comments__form-text">
                     <div class="comments__form-field">
-                        <textarea placeholder="Express your thoughts" id="comment-field"
-                            class="comments__form-textarea"></textarea>
-                        <span class="comments__form-label-text">Express your thoughts</span><br><br>
+                        <textarea id="comment-field" name="author" placeholder="comments..." type="text"
+                            class="comments__form-input comments__form-textarea"></textarea>
+                        <label class="comments__form-label" for="comments__form-label-text">
+                        </label>
                     </div>
                 </div>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
                 <button id="btn-post">Post Comment</button>
             </div>
-    </div>
-    <script>
-        document.querySelector('.menu').addEventListener
-            ('click', () => document.querySelector('.nav-wrapper')
-                .classList.toggle('hide'));
-    </script>
-    <script src="../JS/config.js" type="module"></script>
-    <script src="../JS/article.js" type="module"></script>
-    <script src="../JS/comment.js" type="module"></script>
+
+            <script>
+                document.querySelector('.menu').addEventListener
+                    ('click', () => document.querySelector('.nav-wrapper')
+                        .classList.toggle('hide'));
+            </script>
+            <script src="../JS/config.js" type="module"></script>
+            <script src="../JS/article.js" type="module"></script>
+            <script src="../JS/comment.js" type="module"></script>
 </body>
 
 </html>

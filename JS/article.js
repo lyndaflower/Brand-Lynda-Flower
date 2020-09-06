@@ -2,16 +2,6 @@ import {db} from "./config.js";
 import {storage} from "./config.js";
 
 const singleArticleId = localStorage.getItem("article-id");
-
-// const articleComment = document.querySelector(".article-comment");
-// db.collection('comments').where('currentArticleId','==', singleArticleId).onSnapshot(snapshot=>{
-//   console.log(typeof singleArticleId);
-// })
-
-// db.collection('comments').get().then(res => {
-//     res.docs.forEach(doc => console.log(doc.data()))
-// })
-
 db.collection('blogs').doc(singleArticleId).get().then(snapshot=>{
     // console.log(snapshot.data().url);
     const articlesSection = document.querySelector("section.article");

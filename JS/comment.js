@@ -22,17 +22,16 @@ const getComments = () =>{
         const commentSection = document.querySelector("#comment-section");
           doc.data().comments.map(comment => {
             const commentDiv = document.createElement('div');
-            const nameElement = document.createElement('h4');
-            nameElement.innerHTML = comment.name;
-            const commentElement = document.createElement('p');
-            commentElement.innerHTML = comment.comment;
-            const timestamp = document.createElement('p');
-            timestamp.innerHTML = comment.time;
-            commentDiv.appendChild(nameElement);
-            commentDiv.appendChild(commentElement);
-            commentDiv.appendChild(timestamp);
+            commentDiv.innerHTML = `<div class="comm">
+            <img src="https://img.pngio.com/person-individually-alone-icon-png-image-font-awesome-user-svg-person-icon-png-920_998.png">
+            <div class="comment__details">
+                <div class="name">${comment.name}</div>
+                <p>${comment.comment}</p>
+            </div>
+            </div>`;
             commentSection.appendChild(commentDiv);
           });
+          
       } else {
         console.log("No such document!");
       }
@@ -58,7 +57,6 @@ const postComment = () => {
     location.reload();
   }, 3000);
 };
-
 
 
 button.addEventListener("click", postComment);
