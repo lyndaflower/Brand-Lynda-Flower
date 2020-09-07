@@ -23,6 +23,7 @@ const addBlogBtnClicked =()=>{
     title:title,
     description:description,
     body:body,
+    comments:[],
     url
   })
   .then(function() {

@@ -8,7 +8,7 @@ const fetchArticle = (id) => {
 
 const loadAllArticles = (docs) => {
   var blogSection = document.querySelector("#blog-section");
-
+  
   // blog-card
   let blogCard = document.createElement("div");
   let blogDetails = document.createElement("div");

@@ -18,7 +18,9 @@ const getComments = () =>{
     .doc(localStorage.getItem("article-id"));
 
     blogRef.get().then((doc) => {
-      if (doc.exists) {
+      if(doc.exists && doc.data().comments[0])
+      {
+        console.log(doc.data().comments.length);
         const commentSection = document.querySelector("#comment-section");
           doc.data().comments.map(comment => {
             const commentDiv = document.createElement('div');
@@ -33,7 +35,8 @@ const getComments = () =>{
           });
           
       } else {
-        console.log("No such document!");
+        const noComment= document.querySelector("#comment-title");
+        noComment.style.display ='none';
       }
     }).catch(function (error) {
       console.log("Error getting document:", error);

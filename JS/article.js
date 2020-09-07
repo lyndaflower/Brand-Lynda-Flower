@@ -32,4 +32,30 @@ db.collection('blogs').doc(singleArticleId).get().then(snapshot=>{
     article.appendChild(blogBody);
     articlesSection.appendChild(article);
 })
+const deleteFunction =()=>{
+    document.getElementById('id01').style.display='block';
+      }
+      document.getElementById('delete').addEventListener('click',deleteFunction);
+    const modal =()=>{
+      document.getElementById('id01').style.display='none';
+    }
+    document.getElementById('modal').addEventListener('click',modal);
+const cancel =()=>{
+  document.getElementById('id01').style.display='none';
+}
+document.getElementById('cancel').addEventListener('click',cancel);
+
+const deleteArticle =()=>{
+  db.collection('blogs').doc(singleArticleId).delete().then(function() {
+    console.log("Document successfully deleted!");
+    // setTimeout(()=>{document.querySelector('#deleteArticle a').href='../index.html'}, 6000);
+    setTimeout(function() {
+      window.location.replace('../pages/blog-landing.html');
+    }, 3000);
+
+}).catch(function(error) {
+    console.error("Error removing document: ", error);
+});
+}
+document.getElementById('deleteArticle').addEventListener('click',deleteArticle);
 

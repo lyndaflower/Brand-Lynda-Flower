@@ -29,10 +29,28 @@
                 <i class="fas fa-bars fa-3x"></i>
             </div>
         </nav>
-
         <section class="article"></section>
+        <section class="icons">
+            <div>
+                <i class="fas fa-trash fa-3x" id="delete"></i>
+                <i class="far fa-edit fa-3x"></i>
+            </div>
+            <div id="id01" class="modal">
+                <span id="modal" class="close" title="Close Modal">×</span>
+                <form class="modal-content">
+                  <div class="content">
+                    <h1>Delete Account</h1>
+                    <p>Are you sure you want to delete your account?</p>
+                    <div class="clearfix">
+                      <button type="button" id="cancel" class="cancelbtn"><a href="">Cancel</a></button>
+                      <button type="button" class="deletebtn" id="deleteArticle" ><a href="" >Delete</a></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </section>
         <section class="comment-display" id="comment-section">
-            <h2>Comments</h2>
+            <h2 id="comment-title">Comments</h2>
         </section>
         <!-- comment-section -->
         <section class="comment-section-form">
@@ -45,10 +63,7 @@
                         <label class="comments__form-label" for="comments__form-label-text">
                         </label>
                     </div>
-                </div>
                 <button id="btn-post">Post Comment</button>
-            </div>
-
             <script>
                 document.querySelector('.menu').addEventListener
                     ('click', () => document.querySelector('.nav-wrapper')
