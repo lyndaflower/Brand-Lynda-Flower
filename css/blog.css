@@ -277,6 +277,9 @@ ul {
     display: none;
     
   }
+  .navbar .login-btn{
+    margin-left: 660px;
+  }
 }  
 .article-form-control {
     max-width: 1100px;
@@ -304,7 +307,7 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #970000;
   }
-  .login-btn a{
+  .login-btn{
     padding: 12px 20px;
     border: 0;
     outline: 0;
