@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/article-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <title>Personal website</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-wrapper">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href='../index.html#service'>SERVICE</a></li>
+                <li><a href='../index.html#project'>PROJECT</a></li>
+                <li><a href='./create-article.html'>Article</a> </li>
+                <li><a href='./blog-landing.html'>BLOG</a></li>
+                <li><a href='#contact'>CONTACT</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+        </nav>
+        <section class="article"></section>
+        <section class="icons">
+            <div>
+                <i class="fas fa-trash fa-3x" id="delete"></i>
+                <i class="far fa-edit fa-3x" id="edit"></i>
+            </div>
+            <div id="id01" class="modal">
+                <span id="modal" class="close" title="Close Modal">×</span>
+                <form class="modal-content">
+                  <div class="content">
+                    <h1>Delete Account</h1>
+                    <p>Are you sure you want to delete your blog?</p>
+                    <div class="clearfix">
+                      <button type="button" id="cancel" class="cancelbtn"><a href="">Cancel</a></button>
+                      <button type="button" class="deletebtn" id="deleteArticle" ><a href="" >Delete</a></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </section>
+        <section class="comment-display" id="comment-section">
+            <h2 id="comment-title">Comments</h2>
+        </section>
+        <!-- comment-section -->
+        <section class="comment-section-form">
+            <h2>Leave a comment</h2>
+            <div class="comments" id="comment-form">
+                <div class="comments__form-text">
+                    <div class="comments__form-field">
+                        <textarea id="comment-field" name="author" placeholder="comments..." type="text"
+                            class="comments__form-input comments__form-textarea"></textarea>
+                        <label class="comments__form-label" for="comments__form-label-text">
+                        </label>
+                    </div>
+                <button id="btn-post">Post Comment</button>
+            <script>
+                document.querySelector('.menu').addEventListener
+                    ('click', () => document.querySelector('.nav-wrapper')
+                        .classList.toggle('hide'));
+            </script>
+            <script src="../JS/config.js" type="module"></script>
+            <script src="../JS/article.js" type="module"></script>
+            <script src="../JS/comment.js" type="module"></script>
+</body>
+
+</html>

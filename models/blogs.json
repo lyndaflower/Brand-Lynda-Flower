@@ -1,0 +1,9 @@
+{
+    "blogs":[{
+        "title":"title",
+        "description" :"description",
+        "body": "body",
+        "author":"lynda",
+        "image":" "
+    }]
+}
