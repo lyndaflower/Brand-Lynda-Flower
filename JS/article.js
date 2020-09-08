@@ -48,7 +48,6 @@ document.getElementById('cancel').addEventListener('click',cancel);
 const deleteArticle =()=>{
   db.collection('blogs').doc(singleArticleId).delete().then(function() {
     console.log("Document successfully deleted!");
-    // setTimeout(()=>{document.querySelector('#deleteArticle a').href='../index.html'}, 6000);
     setTimeout(function() {
       window.location.replace('../pages/blog-landing.html');
     }, 3000);
@@ -58,4 +57,7 @@ const deleteArticle =()=>{
 });
 }
 document.getElementById('deleteArticle').addEventListener('click',deleteArticle);
-
+const editingArticle=()=>{
+  window.location.assign('../pages/editing-article.html');
+}
+document.getElementById('edit').addEventListener('click',editingArticle);
