@@ -1,0 +1,33 @@
+
+
+.signin-section{
+    width: 50%;
+    font-size: 15px;
+    margin: auto;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px 0 #dddddd;
+  }
+  
+.input-field {
+    margin: 10px;
+  }
+  
+  .input-field input {
+    font-size: 12px;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+  }
+  .signin-btn {
+    border: none;
+    background-color:#970000;
+    color: #f1f1f1;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 20px;
+  }

@@ -57,3 +57,4 @@ db.collection("blogs")
       loadAllArticles(docs);
     });
   });
+  
