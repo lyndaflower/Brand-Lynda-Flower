@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="../css/signin.css">
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
     <title>Sign in</title>
 </head>
 
 <body>
     <section class="signin-section">
+        <h2>Sign-in</h2>
+        <p class="error-message" id="error-message"></p>
         <div class="input-field">
             <label>Email </label>
-            <input class="email-input" id="username" type="email" required placeholder="Enter email" />
+            <input class="email-input" id="email" type="email" required placeholder="Enter email" />
         </div>
         <div class="input-field">
             <label>Password </label>
             <input class="password-input" id="password" type="password" required placeholder="Enter password" />
         </div>
-        <div class="form__group center">
-            <p class="error"></p>
+        <div >
         </div>
-        <button class="signin-btn" type="submit">Sign In</button>
+        <button class="signin-btn" id="signin" type="submit">Sign In</button>
     </section>
-
-    <script src="../JS/signin.js"></script>
+    <script src="../JS/config.js" type="module"></script>
+    <script src="../JS/signin.js" type="module"></script>
 </body>
 
 </html>
