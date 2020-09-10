@@ -60,6 +60,4 @@ const postComment = () => {
     location.reload();
   }, 3000);
 };
-
-
 button.addEventListener("click", postComment);
