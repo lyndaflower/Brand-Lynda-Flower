@@ -1,16 +1,12 @@
-import { db } from "./config.js";
-import {storage} from "./config.js";
+import { db, storage } from "./config.js";
 
 db.settings({});
-const  createArticle= document.getElementsByClassName(".article-input");
 const addBlogBtnUI = document.querySelector("#add-blog-btn");
-// saving data 
-
+// saving data add-blog-btn
 const addBlogBtnClicked =()=>{
   let title = document.getElementById("title").value;
   let description = document.getElementById("description").value;
   let body = document.getElementById("body").value;
-
      // to get value
      const { files } = document.querySelector('input[type="file"]');
      var storageRef = storage.ref(files[0].name);
@@ -27,11 +23,16 @@ const addBlogBtnClicked =()=>{
     url
   })
   .then(function() {
-         console.log("Doc successful");
-     })
+         if (confirm("Article created successfully")) {
+           
+         } else {
+           
+         }
+         window.location.replace("../pages/adminBlogs.html")
+  })
      .catch(function(error) {
         console.error("Error writing doc", error);
      });
     });
-}
-addBlogBtnUI.addEventListener("click", addBlogBtnClicked);
+   }
+   addBlogBtnUI.addEventListener("click", addBlogBtnClicked);

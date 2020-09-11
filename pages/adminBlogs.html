@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous" />
@@ -26,10 +26,22 @@
           <div class="menu">
             <i class="fas fa-bars fa-3x"></i>
           </div>
-          <div><button class="login-btn" id="signin">Signin</button></div>
+          <div><button class="logout-btn" id="logout">Logout</button></div>
         </nav>
       <!-- blog cards-section -->
-  
+      <div id="id01" class="modal">
+        <span id="modal" class="close" title="Close Modal">×</span>
+        <form class="modal-content">
+          <div class="content">
+            <h1>Delete Blog</h1>
+            <p>Are you sure you want to delete your blog?</p>
+            <div class="clearfix">
+              <button type="button" id="cancel" class="cancelbtn"><a href="">Cancel</a></button>
+              <button type="button" id="deleteArticle" class="deletebtn"  ><a href="" >Delete</a></button>
+            </div>
+          </div>
+        </form>
+      </div>
       <section class="blog-cards-section" id="blog-section">
          <div class="meta">
            <div class="photo">
@@ -37,9 +49,6 @@
            </div>
          </div>
           <div class="description">
-            <p class="read-more">
-              <a href="article.html">Read More<i class="fas fa-arrow-right"></i></a>
-            </p>
           </div>
       </section>
     </div>
@@ -50,5 +59,6 @@
     </script>
     <script src="../JS/config.js" type="module"></script>
     <script src="../JS/adminBlogs.js" type="module"></script>
+    <script src="../JS/editing-article.js"></script>
   </body>
   </html>

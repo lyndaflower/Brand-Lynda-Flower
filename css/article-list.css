@@ -313,19 +313,12 @@ ul {
   color: #970000;
   font-weight: bolder;
 }
-.icons{
-  margin-left: 150px;
-  padding: 30px;
-}
 .icons i{
   color: #970000;
-  padding: 10px;
+  margin-left: 10px;
 }
 .icons i:hover{
   color:#00001a;
-}
-.icons .delete{
-  width:40%;
 }
 /* Set a style for all buttons */
 button {

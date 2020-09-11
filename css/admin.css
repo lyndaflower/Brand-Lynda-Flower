@@ -103,3 +103,207 @@
     z-index: 2;
     display: none;
   }
+  .logout-btn{
+    padding: 12px 20px;
+    border: 0;
+    outline: 0;
+    background: #f1f1f1;
+    color: #970000;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+.blog-cards-section{
+  width: 50%;
+  margin-left: 200px;
+}
+.blog-card {
+   display: flex;
+   flex-direction: row;
+   margin: 1rem auto;
+   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
+   margin-bottom: 1.6%;
+   background: rgb(236, 228, 228);
+   line-height: 1.4;
+   font-family: sans-serif;
+   border-radius: 5px;
+   overflow: hidden;
+   z-index: 0;
+}
+.blog-card a {
+   color: inherit;
+}
+.blog-card a:hover {
+   color: #970000;
+}
+.blog-card:hover .photo {
+   transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+   position: relative;
+   z-index: 0;
+   height: 0 auto;
+   width: 100%;
+
+}
+.blog-card .photo {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: initial;
+   transition: transform 0.2s;
+}
+.blog-card .description {
+   padding: 1rem;
+   background:rgb(236, 228, 228);
+   position: relative;
+   z-index: 1;
+}
+.blog-card .description h1, .blog-card .description h2 {
+   font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+   line-height: 1;
+   margin: 0;
+   font-size: 1.7rem;
+}
+.blog-card .description h2 {
+   font-size: 1rem;
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #a2a2a2;
+   margin-top: 5px;
+}
+.blog-card p {
+   position: relative;
+   margin: 1rem 0 0;
+   /* max-height: 100px; */
+   overflow: hidden;
+}
+.blog-card p:first-of-type {
+   margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+   content: "";
+   position: absolute;
+   height: 5px;
+   background: #970000;
+   width: 35px;
+   top: -0.75rem;
+   border-radius: 3px;
+}
+
+
+.icons{
+  margin-left: 150px;
+  padding: 30px;
+}
+.icons i{
+  color: #970000;
+  padding: 10px;
+}
+.icons i:hover{
+  color:#00001a;
+}
+.icons .delete{
+  width:40%;
+}
+/* Set a style for all buttons */
+.clearfixbutton {
+  color: white;
+  padding: 15px 22px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.clearfix button:hover {
+  opacity:1;
+}
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color:#970000;
+  color: #f1f1f1;
+}
+/* Add a color to the delete button */
+.deletebtn {
+  background-color:#888;
+}
+.deletebtn a{
+  margin: 0;
+  padding: 0;
+}
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background: #111;
+  padding-top: 50px;
+  margin-top: 60px;
+  opacity: 0.9;
+} 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto 15% auto; 
+  border: 1px solid #888;
+  width: 50%; 
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.content {
+  text-align: center;
+
+}
+.close:hover,
+.close:focus {
+  color: #ddd;
+  cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}

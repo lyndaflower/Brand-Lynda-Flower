@@ -1,7 +1,6 @@
 import { db } from "./config.js";
 
-
-const singleArticleId = localStorage.getItem("article-id");
+const singleArticleId = localStorage.getItem("edit-article");
 const blogRef = db.collection('blogs').doc(singleArticleId);
 const editTitle = document.querySelector('#title');
 const editDescr= document.querySelector('#description');

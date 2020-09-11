@@ -321,3 +321,17 @@ input[type=text], select, textarea {
     font-size: 12px;
     font-weight: bolder;
   }
+  .logout-btn{
+    padding: 12px 20px;
+    border: 0;
+    outline: 0;
+    background: #f1f1f1;
+    color: #970000;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bolder;
+  }
