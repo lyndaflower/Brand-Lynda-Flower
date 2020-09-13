@@ -1,15 +1,15 @@
 import { db } from "./config.js";
 // import {storage} from "./config";
 
-firebase.auth().onAuthStateChanged((user) =>{
-if(!user){
-  window.location.replace('../pages/signin.html');
-}
-})
+firebase.auth().onAuthStateChanged((user) => {
+  if (!user) {
+    window.location.replace("../pages/signin.html");
+  }
+});
 const singleArticleId = localStorage.getItem("article-id");
 const renderArticle = (doc) => {
   var blogSection = document.querySelector("#blog-section");
-  
+
   // blog-card
   let blogCard = document.createElement("div");
   let blogDetails = document.createElement("div");
@@ -34,41 +34,42 @@ const renderArticle = (doc) => {
   </div>
  `;
 
-deleteIcon.addEventListener('click',()=>{
+  deleteIcon.addEventListener("click", () => {
+    document.getElementById("blog-section").style.display = "none";
+    document.getElementById("id01").style.display = "block";
 
-document.getElementById('blog-section').style.display = 'none';
-document.getElementById('id01').style.display = 'block';
+    const modal = () => {
+      document.getElementById("id01").style.display = "none";
+    };
+    document.getElementById("modal").addEventListener("click", modal);
+    document.getElementById("deleteArticle").addEventListener("click", () => {
+      // console.log(doc.id);
+      db.collection("blogs")
+        .doc(doc.id)
+        .delete()
+        .then(function () {
+          console.log("Document successfully deleted!");
+          setTimeout(function () {
+            window.location.replace("../pages/adminBlogs.html");
+          }, 3000);
+        })
+        .catch(function (error) {
+          console.error("Error removing document: ", error);
+        });
+    });
+    document.getElementById("cancel").addEventListener("click", () => {
+      window.location.replace("../pages/adminBlogs.html");
+    });
+  });
 
-const modal =()=>{
-  document.getElementById('id01').style.display='none';
-}
-document.getElementById('modal').addEventListener('click',modal);
-document.getElementById('deleteArticle').addEventListener('click',()=>{
-  // console.log(doc.id);
-    db.collection('blogs').doc(doc.id).delete().then(function() {
-      console.log("Document successfully deleted!");
-      setTimeout(function() {
-        window.location.replace('../pages/adminBlogs.html');
-      }, 3000);
-}).catch(function(error) {
-  console.error("Error removing document: ", error);
-});
-})
-document.getElementById('cancel').addEventListener('click',()=>{
-  window.location.replace('../pages/adminBlogs.html')
-})
-
-})
-
-
-let edit = document.createElement("div");
-edit.innerHTML=`<div class="icons">
+  let edit = document.createElement("div");
+  edit.innerHTML = `<div class="icons">
 <i class="fas fa-edit fa-3x" id="edit"></i>
 </div>`;
-edit.addEventListener('click',()=>{
-  localStorage.setItem("edit-article",doc.id);
-  window.location.assign('../pages/editing-article.html');
-})
+  edit.addEventListener("click", () => {
+    localStorage.setItem("edit-article", doc.id);
+    window.location.assign("../pages/editing-article.html");
+  });
 
   image.setAttribute("class", "photo");
   blogCard.setAttribute("class", "blog-card");
@@ -95,14 +96,9 @@ db.collection("blogs")
       renderArticle(doc);
     });
   });
-  
-  const logout =()=>{
-    firebase.auth().signOut();
-    window.location.assign('../pages/signin.html');
-  }
-document.getElementById('logout').addEventListener('click',logout);
 
-
-
- 
-
+const logout = () => {
+  firebase.auth().signOut();
+  window.location.assign("../pages/signin.html");
+};
+document.getElementById("logout").addEventListener("click", logout);

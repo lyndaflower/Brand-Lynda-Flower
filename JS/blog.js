@@ -8,7 +8,7 @@ const fetchArticle = (id) => {
 
 const loadAllArticles = (docs) => {
   var blogSection = document.querySelector("#blog-section");
-  
+
   // blog-card
   let blogCard = document.createElement("div");
   let blogDetails = document.createElement("div");
@@ -30,8 +30,7 @@ const loadAllArticles = (docs) => {
   let blogReadMore = document.createElement("a");
   const readMore = document.createTextNode("read more");
   blogReadMore.appendChild(readMore);
-  blogReadMore.addEventListener('click', () =>
-  fetchArticle(docs.id));
+  blogReadMore.addEventListener("click", () => fetchArticle(docs.id));
 
   image.setAttribute("class", "photo");
   blogCard.setAttribute("class", "blog-card");
@@ -57,8 +56,8 @@ db.collection("blogs")
       loadAllArticles(docs);
     });
   });
-  
-  const signin =()=>{
-    window.location.assign('../pages/signin.html');
-}
-document.getElementById('signin').addEventListener('click',signin);
+
+const signin = () => {
+  window.location.assign("../pages/signin.html");
+};
+document.getElementById("signin").addEventListener("click", signin);
