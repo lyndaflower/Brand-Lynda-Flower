@@ -39,19 +39,27 @@ deleteIcon.addEventListener('click',()=>{
 document.getElementById('blog-section').style.display = 'none';
 document.getElementById('id01').style.display = 'block';
 
-// document.getElementById('deleteArticle').addEventListener('click',deleteArtic(doc.id));
-// const modal =()=>{
-//   document.getElementById('id01').style.display='none';
-// }
-// document.getElementById('modal').addEventListener('click',modal);
-})
+const modal =()=>{
+  document.getElementById('id01').style.display='none';
+}
+document.getElementById('modal').addEventListener('click',modal);
 document.getElementById('deleteArticle').addEventListener('click',()=>{
-  console.log(doc.id);
+  // console.log(doc.id);
     db.collection('blogs').doc(doc.id).delete().then(function() {
       console.log("Document successfully deleted!");
-    })
-
+      setTimeout(function() {
+        window.location.replace('../pages/adminBlogs.html');
+      }, 3000);
+}).catch(function(error) {
+  console.error("Error removing document: ", error);
 });
+})
+document.getElementById('cancel').addEventListener('click',()=>{
+  window.location.replace('../pages/adminBlogs.html')
+})
+
+})
+
 
 let edit = document.createElement("div");
 edit.innerHTML=`<div class="icons">
@@ -95,15 +103,7 @@ db.collection("blogs")
   }
 document.getElementById('logout').addEventListener('click',logout);
 
-const cancel =()=>{
-  document.getElementById('id01').style.display='none';
-  }
-  document.getElementById('cancel').addEventListener('click',cancel);
 
-  const deleteArtic=(id)=>{
-    console.log(id);
-    db.collection('blogs').doc(id).delete().then(function() {
-      console.log("Document successfully deleted!");
-    })
-  }
+
+ 
 

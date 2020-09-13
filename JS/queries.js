@@ -7,7 +7,7 @@ const addUserComment =()=>{
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let comment = document.getElementById("comment").value;
-db.collection('queries').doc().add({
+db.collection('queries').add({
     name:name,
     email:email,
     subject:subject,
@@ -21,3 +21,8 @@ db.collection('queries').doc().add({
 });
 }
 userQuieries.addEventListener('click',addUserComment);
+
+
+
+
+
