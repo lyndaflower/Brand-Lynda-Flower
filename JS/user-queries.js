@@ -22,3 +22,10 @@ const displayUserQueries =()=>{
     })
 }
 window.addEventListener('load',displayUserQueries);
+
+const logout =()=>{
+    firebase.auth().signOut();
+    window.location.assign('../pages/signin.html');
+    
+  }
+document.getElementById('logout').addEventListener('click',logout);

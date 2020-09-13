@@ -61,3 +61,10 @@ const editingArticle=()=>{
   window.location.assign('../pages/editing-article.html');
 }
 document.getElementById('edit').addEventListener('click',editingArticle);
+
+const logout =()=>{
+  firebase.auth().signOut();
+  window.location.assign('../pages/signin.html');
+  
+}
+document.getElementById('logout').addEventListener('click',logout);
