@@ -201,8 +201,10 @@
    top: -0.75rem;
    border-radius: 3px;
 }
-
-
+/* .clearfix button{
+  padding: 12px 20px;
+  outline: 0;
+} */
 .icons{
   margin-left: 150px;
   padding: 30px;
@@ -218,13 +220,12 @@
   width:40%;
 }
 /* Set a style for all buttons */
-.clearfixbutton {
+.clearfix button {
   color: white;
   padding: 15px 22px;
-  margin: 8px 0;
+  /* margin: 8px 0; */
   border: none;
   cursor: pointer;
-  width: 100%;
   opacity: 0.9;
 }
 .clearfix button:hover {
@@ -239,12 +240,12 @@
 
 /* Add a color to the cancel button */
 .cancelbtn {
-  background-color:#970000;
+  background-color:#888;
   color: #f1f1f1;
 }
 /* Add a color to the delete button */
 .deletebtn {
-  background-color:#888;
+  background: #970000;
 }
 .deletebtn a{
   margin: 0;

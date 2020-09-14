@@ -281,11 +281,26 @@ ul {
     margin-left: 660px;
   }
 }  
+
+.article-form-control h2{
+  color: #111;
+  text-transform: uppercase;
+  margin-right: 130px;
+}
+.article-form-control h2::after{
+    content: "";
+    display: block;
+    width: 2em;
+    height: 0.25em;
+    background:#970000;
+    margin-top: 0.2em;
+  }
 .article-form-control {
     max-width: 1100px;
+    box-shadow: 0 3px 6px 0 #999797;
     margin: 0 auto;
-    width: 70%;
-    padding: 100px;
+    width: 50%;
+    padding: 50px;
 }
 input[type=text], select, textarea {
     width: 100%;

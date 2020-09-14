@@ -1,6 +1,11 @@
 import { db } from "./config.js";
 import { storage } from "./config.js";
 
+firebase.auth().onAuthStateChanged((user) => {
+  if (!user) {
+    window.location.replace("../pages/signin.html");
+  }
+});
 const singleArticleId = localStorage.getItem("article-id");
 db.collection("blogs")
   .doc(singleArticleId)

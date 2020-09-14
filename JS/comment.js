@@ -54,7 +54,7 @@ const postComment = () => {
     .doc(localStorage.getItem("article-id"));
   blogRef.update({
     comments: firebase.firestore.FieldValue.arrayUnion({
-      name: "Doreen Shami",
+      name: "",
       comment: textData,
       image: "",
       time: `${hours}:${minutes}`,

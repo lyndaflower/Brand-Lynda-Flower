@@ -1,5 +1,11 @@
 import { db, storage } from "./config.js";
 
+firebase.auth().onAuthStateChanged((user) => {
+   if (!user) {
+     window.location.replace("../pages/signin.html");
+   }
+ });
+ 
 db.settings({});
 const addBlogBtnUI = document.querySelector("#add-blog-btn");
 // saving data add-blog-btn
