@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <ul class="nav-wrapper">
+                <li><a href="../pages/adminBlogs.html">BLOGS</a></li>
+                <li><a href='../pages/create-article.html'>CREATE ARTICLE</a></li>
+                <li><a href='../pages/admin.html'>MESSAGE/QUERIES</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+            <div><button class="logout-btn" id="logout">Logout</button></div>
+        </nav>
+        <div class="user-queries"></div>
+    </div>
+    <script src="../JS/config.js" type="module"></script>
+    <script src="../JS/user-queries.js" type="module"></script>
+</body>
+
+</html>

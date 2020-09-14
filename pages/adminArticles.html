@@ -11,6 +11,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
     <title>Articles</title>
 </head>
 
@@ -18,20 +19,16 @@
     <div class="container">
         <nav class="navbar">
             <ul class="nav-wrapper">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href='../index.html#service'>SERVICE</a></li>
-                <li><a href='../index.html#project'>PROJECT</a></li>
-                <li><a href='./create-article.html'>Article</a> </li>
-                <li><a href='./blog-landing.html'>BLOG</a></li>
-                <li><a href='#contact'>CONTACT</a></li>
+                <li><a href="../pages/adminBlogs.html">BLOGS</a></li>
+                <li><a href='../pages/create-article.html'>CREATE ARTICLE</a></li>
+                <li><a href=''>MESSAGE/QUERIES</a></li>
             </ul>
             <div class="menu">
                 <i class="fas fa-bars fa-3x"></i>
             </div>
-
         </nav>
         <section class="article"></section>
-        <!-- <section class="icons
+        <section class="icons">
             <div>
                 <i class="fas fa-trash fa-3x" id="delete"></i>
                 <i class="far fa-edit fa-3x" id="edit"></i>
@@ -39,17 +36,17 @@
             <div id="id01" class="modal">
                 <span id="modal" class="close" title="Close Modal">×</span>
                 <form class="modal-content">
-                  <div class="content">
-                    <h1>Delete Account</h1>
-                    <p>Are you sure you want to delete your blog?</p>
-                    <div class="clearfix">
-                      <button type="button" id="cancel" class="cancelbtn"><a href="">Cancel</a></button>
-                      <button type="button" class="deletebtn" id="deleteArticle" ><a href="" >Delete</a></button>
+                    <div class="content">
+                        <h1>Delete Account</h1>
+                        <p>Are you sure you want to delete your blog?</p>
+                        <div class="clearfix">
+                            <button type="button" id="cancel" class="cancelbtn"><a href="">Cancel</a></button>
+                            <button type="button" class="deletebtn" id="deleteArticle"><a href="">Delete</a></button>
+                        </div>
                     </div>
-                  </div>
                 </form>
-              </div>
-        </section> -->
+            </div>
+        </section>
         <section class="comment-display" id="comment-section">
             <h2 id="comment-title">Comments</h2>
         </section>
@@ -58,9 +55,6 @@
             <h2>Leave a comment</h2>
             <div class="comments" id="comment-form">
                 <div class="comments__form-text">
-                    <div>
-                        <!-- <input type="text" name="name" id="name" placeholder="name"class="comments__form-input comments"> -->
-                    </div>
                     <div class="comments__form-field">
                         <textarea id="comment-field" name="author" placeholder="comments..." type="text"
                             class="comments__form-input comments__form-textarea"></textarea>

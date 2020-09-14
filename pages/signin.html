@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signin.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <title>Sign in</title>
+</head>
+
+<body>
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i>Back</a>
+    <section class="signin-section">
+        <h2>Sign-in</h2>
+        <p class="error-message" id="error-message"></p>
+        <div class="input-field">
+            <label>Email </label>
+            <input class="email-input" id="email" type="email" required placeholder="Enter email" />
+        </div>
+        <div class="input-field">
+            <label>Password </label>
+            <input class="password-input" id="password" type="password" required placeholder="Enter password" />
+        </div>
+        <div >
+        </div>
+        <button class="signin-btn" id="signin" type="submit">Sign In</button>
+    </section>
+    <script src="../JS/config.js" type="module"></script>
+    <script src="../JS/signin.js" type="module"></script>
+</body>
+
+</html>
